@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+padding: 30px;
+background-image: url('./images/bg-intro-mobile.png');
+background-color: hsl(0, 100%, 74%);
+text-align: center;
+font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+color: white;
+font-size: 2rem;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+.block1-p {
+  color: white;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  background-color: hsl(249, 53%, 47%);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 1px;
+}
+
+.terms {
+  color: hsl(0, 100%, 74%) ;
+  font-weight: 600;
+}
+
+.block2 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 1px;
+}
+
+button[type=submit] {
+  width: 100%;
+  padding: 20px;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  box-shadow: green 0px 4px;
+}
+
+.block2-p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgb(177, 176, 176);
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: block;
+font-size: 12px;
+padding: 10px;
+}
+
+.input-control input:focus {
+  outline: 0;
+  border: solid 3px black;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+  background: url(/images/icon-error.svg) no-repeat center right;
+  background-position: 250px;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 12px;
+  height: 13px;
+  text-align: center;
+  padding: 5px;
+  font-style: italic;
+}
+
+
+@media only screen and (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: center;
+  }
+
+  body {
+    padding: 100px 300px 0px 300px;
+  }
+
+  .block1 {
+  grid-row: span 2;
+  text-align: initial;
+}
+
+.input-control.error input {
+  background-position: 460px;
+}
+
+  .block2 {
+    grid-column: 2;
+    max-width: 500px;
+    height: 350px;
+  }
+
+  input[type=text] {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  input[type=password] {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .input-control .error {
+    text-align: right;
+  }
+
+}
